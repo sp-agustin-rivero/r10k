@@ -56,6 +56,7 @@ class r10k::params
   $webhook_configfile_owner      = 'root'
   $webhook_configfile_group      = '0'
   $webhook_configfile_mode       = '0644'
+  $webhook_pidfile               = '/var/run/webhook/webhook.pid'
 
   if $::osfamily == 'Debian' {
     $functions_path     = '/lib/lsb/init-functions'

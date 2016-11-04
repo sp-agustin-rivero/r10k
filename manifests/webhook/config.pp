@@ -36,6 +36,7 @@ class r10k::webhook::config (
   $configfile_owner      = $r10k::params::webhook_configfile_owner,
   $configfile_group      = $r10k::params::webhook_configfile_group,
   $configfile_mode       = $r10k::params::webhook_configfile_mode,
+  $pidfile               = $r10k::params::webhook_pidfile,
   $configfile            = '/etc/webhook.yaml',
   $manage_symlink        = false,
   $configfile_symlink    = '/etc/webhook.yaml',
